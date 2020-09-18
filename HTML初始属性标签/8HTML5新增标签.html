@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5新增标签</title>
+    <style>
+        body
+        {
+            /*设置背景颜色 */
+            background-color: rgba(154, 138, 243, 0.87);
+
+            /* 设置背景图片 */
+            /* background-image: url(../HTML初始属性标签/img/123.jpg); */
+        }
+        div.kk
+        {
+            margin: auto;
+            width: 40%;
+            background-color: rgb(194, 240, 151);
+        }
+        #music{
+            margin: auto;
+            width: 400px;
+        }
+        #musicMV{
+            margin: auto;
+            margin-left: 30%;
+        }
+        #dd
+        {
+            color: rgb(130, 111, 0);
+            margin-left: 12%;
+        }
+        #gg
+        {
+            color: indigo;
+            margin-left: 10%;
+        }
+        video
+        {
+            width: 59%;
+            height: 30%;
+        }
+        
+    </style>
+        <!-- 下面这列是给网页头做为logo显示的  图片格式必须为ico格式的  -->
+        <link rel="shortcut icon" href="../HTML初始属性标签/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <form action="#" >
+        <!-- fieldset   集合 -->
+        <!-- 将表单内容的一部分打包，生成一组相关表单字段 -->
+        <!-- <legend>标签为fieldset元素定义标题 -->
+            <div class="kk">
+                <fieldset>
+                    <legend style="color: blue;" id="ding">用户登录</legend>
+                    <br>
+                    <a href="#musicMV"><button type="button" style="color: red;">点这里看MV</button></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#music"><button type="button" style="color: rgba(38, 0, 255, 0.87);">点这里听MP3</button></a>
+                    <p style="color: chocolate;" >
+                        用户名：                      
+                        <!-- 下面这个autofocus是自动获得焦点  也是h5新增的 还有 placeholder 是提示文本属性 -->
+                        <label><input type="text" autofocus placeholder="请输入用户名"></label>
+                    </p>
+                    <p style="color: chocolate;">
+                        密&nbsp;&nbsp;&nbsp;码：
+                        <label><input type="password" placeholder="请输入密码"></label>
+                    </p>
+                    <p style="color: darkmagenta;">
+                        颜色自选调试：
+                        <label><input type="color"></label>
+                    </p>
+                    <hr>
+                    <p style="color: rgb(30, 0, 139);">
+                        邮箱输入提示框：
+                        <label><input type="email" placeholder="点击输入邮箱"></label>
+                    </p>
+                    <hr>
+                    <p style="color: darkmagenta;">
+                        手机号输入框：
+                        <label><input type="tel" placeholder="点击输入手机号"></label>
+                    </p>
+                    <hr>
+                    <p style="color: rgb(137, 139, 0);">
+                        规定数字输入框：
+                        <label><input type="number"></label>
+                    </p>
+                    <hr>
+                    <p style="color: darkmagenta;">
+                        url（规定网址输入框）：
+                        <label><input type="url" placeholder="点击输入网址"></label>
+                    </p>
+                    <hr>
+                    <p style="color: darkmagenta;">
+                        搜索框：
+                        <label><input type="search"></label>
+                    </p>
+                    <hr>
+                    <p style="color: darkmagenta;">
+                        调大小区域：
+                        <label><input type="range"></label>
+                    </p>
+                    <hr>
+                    <p style="color: darkmagenta;">
+                        日期选择：
+                        <label><input type="date"></label>
+                    </p>
+                    <hr>
+                    <p style="color: darkmagenta;">
+                        年月份选择：
+                        <label><input type="month"></label>
+                    </p>
+                    <hr>
+                    <p style="color: darkmagenta;">
+                        年周选择：
+                        <label><input type="week"></label>
+                    </p>
+                    <hr>
+                    <p style="color: darkmagenta;">
+                        时间：
+                        <label><input type="time"></label>
+                    </p>
+                    <input type="reset">  
+                    <input type="submit">
+                </fieldset>  
+            </div>
+            <!--以下是多媒体标签  -->
+            <!-- embed标签 -->
+            <!-- 可以用来插入各种多媒体，格式是可以 Midi、Wav、AIFF、AU、MP3等等； -->
+            <!-- url为音频或视频文件及其路径，可以是相对路径或绝对路径；存在兼容性问题，使用需要深度定制。 -->
+            <div id="music">
+                <!-- audio 音频播放标签：  声音支持ogg、mp3、wav等音频格式  audio 后面必须加controls才能显示播放器 -->
+                <h4 id="gg">Mp3:《蒙面哥 - 起风了》</h4>
+                <audio controls>
+                    <source src="../HTML初始属性标签/音频文件/蒙面哥 - 起风了.mp3">
+                        <!-- 如果播放不了就提示如下 -->
+                        您的浏览器不支持播放声音
+                </audio>
+            </div>
+            <!-- video 视频播放标签： 视频支持ogg、mp4、wevM等视频格式 -->
+            <div id="musicMV">
+                <h4 id="dd">Mp4:《赵方婧 - 芒种》</h4>
+                <video controls >
+                    <source src="../HTML初始属性标签/音频文件/音阙诗听、赵方婧 - 芒种.mkv">
+                        <!-- 如果播放不了就提示如下 -->
+                        您的浏览器不支持播放声音！  
+                </video>
+            </div>
+    </form>
+</body> 
+</html>    

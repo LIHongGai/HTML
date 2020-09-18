@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 让标签隐藏 (none) */
+        /* div
+        {
+            background-color: royalblue;
+            width: 200px;
+            height: 256px;
+            display: none;
+        } */
+
+        /* 让块级标签转换成行内标签 （inline)   转成行内标签 标注的尺寸就没用了 所以就去掉了*/
+        div
+        {
+            background-color: royalblue;
+            display:inline;
+        }
+
+        /* 让行内标签转换成块级标签 （block） */
+        a
+        {
+            background-color: rgb(96, 244, 195);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>行内标签是在同一行后面继续添加元素，块级标签是独占一行 ;<span style="color: tomato;">行内标签更改不了尺寸，块级标签可以</span></h2>
+    <div>123456</div>
+    <a href="#">百度一下</a>
+    <a href="#">谷歌翻译</a>
+    <a href="#">音乐堡垒</a>
+</body>
+</html>

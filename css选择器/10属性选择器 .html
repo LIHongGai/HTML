@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 属性选择器  它可以挑选带有特殊属性的标签  用法格式如下*/
+        /* 例子1 [属性名] */
+
+        div[name]{
+            color: tomato;
+        }
+
+        /* 例子2 [属性名=“属性值"]  */
+
+        div[id="Album"]{
+            color: rgb(130, 238, 139);
+        }
+        
+        /* 例子3 [属性名~=“属性值"] */
+
+        div[class][sex]
+        {
+            color: rgb(135, 71, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <div name="music">音乐</div>
+    <div id="Album">专辑</div>
+    <div class="singer" sex="nan">歌手</div>
+</body>
+</html>

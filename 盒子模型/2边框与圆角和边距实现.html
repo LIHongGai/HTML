@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body div
+        {
+            margin: 100px;
+        }
+        #aa
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+        }
+        #bb
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+
+            /* 添加内边距 */
+            padding: 20px;
+        }
+        #cc
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+        }
+        #dd
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+
+            /* 给边框弧度 */
+            border-radius: 20px;
+        }
+        #ee
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+
+            /* 给边框弧度 */
+            border-radius: 50%;
+        }
+        #ff
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+
+            /* 给右上角边框弧度 */
+            border-top-left-radius: 50%;
+        }
+        /* 漏打多加的 */
+        #fff
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+
+            /* 给左下角边框弧度 */
+            border-bottom-left-radius: 50%;
+        }
+        #gg
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+
+            /* 给左上角和右下角边框弧度 */
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        #hh
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+
+            /* 给右上角边框弧度 */
+            border-top-right-radius: 50%;
+        }
+        #hhh
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+
+            /* 给右下角边框弧度 */
+            border-bottom-right-radius: 50%;
+        }
+        #ii
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+
+            /* 给右上角和左下角边框弧度 */
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+        #jj
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+
+            /* 给左上角和左下角边框弧度 */
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+        #jjj
+        {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            /* 添加内边距 */
+            padding: 20px;
+
+            /* 添加边框 */
+            border: green 10px solid;
+
+            /* 给右上角和右下角边框弧度 */
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>各个盒子上右下左边距为100px</h3>
+    <div id="aa">
+        初始盒子，宽高200px。
+    </div>
+    <div id="bb">
+        添加内边距上右下左各20px。
+    </div>
+    <div id="cc">
+        添加边框，设为绿色，宽度为15px。
+    </div>
+    <div id="dd">
+        设置边框为圆角，弧度为20px。
+    </div>
+    <div id="ee">
+        设置盒子为圆形。
+    </div>
+    <div id="ff">
+        设置盒子边框左上角为%50的圆弧。
+    </div>
+    <div id="fff">
+        设置盒子边框左下角为%50的圆弧。
+    </div>
+    <div id="gg">
+        设置盒子边框左上角和右下角为%50的圆弧。
+    </div>
+    <div id="hh">
+        设置盒子边框右上角为%50的圆弧。
+    </div>
+    <div id="hhh">
+        设置盒子边框右下角为%50的圆弧。
+    </div>
+    <div id="ii">
+        设置盒子边框右上角左下角为%50的圆弧。
+    </div>
+    <div id="jj">
+        设置盒子边框左上角和左下角为%50的圆弧。
+    </div>
+    <div id="jjj">
+        设置盒子边框右上角右下角为%50的圆弧。
+    </div>
+</body>
+</html>

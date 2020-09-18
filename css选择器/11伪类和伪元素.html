@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 设置背景 */
+        body
+        {
+            background-color: rgb(165, 209, 230);
+        }
+
+                /* 设置顶部选择器优先级看板 */
+                #you h3
+        {
+            color: rgb(172, 50, 56);
+        }
+        #you p
+        {
+            color: rgb(117, 57, 21);
+        }
+        #you
+        {
+            text-align:center;
+        }
+
+        /* 对图片进行居中 */
+        .tu
+        {
+            text-align:center;
+        }
+        /* 给文字调整段落和添加背景颜色 和设置居中 */
+        .zhu p
+        {
+            margin:auto;
+            width:40%;
+            background-color: royalblue;
+            
+        }
+
+        /* 使用伪元素 ::first-letter 选择指定元素的第一个单词*/
+        .zhu p::first-letter
+        {
+            font-size: 40px;
+            color: red;
+        }
+                /* 使用伪元素 ::first-letter 选择指定元素的第一行*/
+        .zhu p::first-line
+        {
+            font-size: 30px;
+            color: rgb(43, 255, 0);
+        }
+
+        /* 使用伪类设置第一段 选择被鼠标悬浮着的元素变化 */
+        .zhu p#wei:hover
+        {
+            width:800px;
+            background-color: rgb(225, 161, 65);
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div id="you">
+        <h2 style="color: blue;">选择器优先级别</h2>
+        <h3>1、选择器的针对性越强，它的优先级别就越高。</h3>
+        <h3>2、选择器的权值4</h3>
+        <p>important: 1000</p>
+        <p>id ：100</p>
+        <p>伪类/伪元素： 10</p>
+        <p>属性： 10</p>
+        <p>类： 10</p>
+        <p>标签：1</p>
+        <p>*：0</p>
+        <h3>原则：选择器的权值 <span style="color: rgb(10, 9, 9);">"加"</span> 到一起，大的优先；如果权值相同，后定义的优先。</h3>
+        <h3>
+            优先级排序：
+            <P>important > 内联 > id >类、伪类、伪元素、属性 > * > 继承</P>
+        </h3>
+    </div>
+    <div class="tu">
+        <h4 style="color: red;">伪元素</h4>
+        <img src="../css选择器/img/伪元素.jpg" alt="">
+        <h4 style="color: red;">伪类</h4>
+        <img src="../css选择器/img/伪类1.jpg" alt="">
+        <img src="../css选择器/img/伪类2.jpg" alt="">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="zhu">
+        <p id="wei">你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪</p>
+        <p>你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪</p>
+        <p>你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪你是猪</p>
+    </div>
+</body>
+</html>

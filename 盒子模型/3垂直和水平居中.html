@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            height: 400px;
+            width: 500px;
+            background-color: red;
+            margin: 50px;
+            /* 行内标签水平居中   按钮也可以用 */
+            text-align: center;
+            /* 垂直居中 */
+            line-height: 400px;
+        }
+        #test1
+        {
+            background-color: red;
+            height: 400px;
+            width: 500px;
+            margin: 20px;
+
+            /* 父项相对定位 */
+            position: relative;
+        }
+        #box1
+        {
+            background-color: seagreen;
+            height: 30px;
+            width: 80px;
+            /* 块级标签水平居中 */
+            /* margin: 0 auto; */
+
+            /* 子项绝对定位 */
+            /* 下列用法用了之后 水平居中的  margin: 0 auto; 就没用了*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -40px;
+            margin-top: -15px;
+        }
+        span
+        {
+            background-color: skyblue;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+        <span>我是行内标签</span>
+    </div>
+    <div id="test1">
+        <div id="box1">
+            块级标签
+        </div>
+    </div>
+</body>
+</html>

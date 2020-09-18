@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <!-- form就是表单域  由表单域来控制整个表单 -->
+    <form action="#">
+            <!-- input标签 -->
+    <div>
+        <img src="./img/表单控件属性.jpg" alt="控件属性参考" height="350" width="900">
+        <hr>
+        <h3 style="color: darkgreen;">小小怪个人资料</h3>
+        <br>
+        <!-- 单行文本输入框 -->
+        <label >
+            <h5 style="color: darkred;">
+                请输入用户名：
+                <input type="text"> 
+            </h5> 
+        </label>
+
+        <!-- 密码输入框 -->
+        <h5 style="color: darkred;">
+            请输入密码哦：
+            <input type="password"> 
+        </h5>
+
+        <!-- 单选按钮 （只能选一个）加name就可多加选项  再如果在name后面加checked初始页面就默认选男  如下 -->
+        <p style="color: rgb(58, 33, 201);">
+            性别：
+            <input type="radio" name="sex" checked>男
+            <input type="radio" name="sex">女
+        </p>
+
+        <!-- 复选框 （就是多选的意思 有个小勾勾）加name就可多加选项 如下 -->
+        <p style="color: darkorchid;">
+            兴趣爱好：
+            <input type="checkbox" name="1">打怪 
+            <input type="checkbox" name="">升级 
+            <input type="checkbox" name="3">挨打
+        </p>
+
+        <!-- 文件域（可以上传文件） -->
+        <p style="color: black;">
+            请上传个人相片： 
+            <input type="file">
+        </p>
+
+        <!-- 上边为重置按钮   下边为提交按钮  如果没写有表单域的话这些按钮是没用的-->
+         <input type="reset">  
+         <input type="submit">
+    </div>
+    <hr>
+    <!-- label标签 -->
+    <div>
+        <!-- 这行如果运行点到左边字那里光标就会自动到输入框 （建议有输入框的都加label标签，如第一个div文本框）-->
+        <label >
+            <p style="color: darkorange;">
+                小小怪的一集挨打多少次 :
+                <input type="text">
+            </p>
+        </label>
+
+        <!-- 这行就是如果加了for就可以选择先点亮哪个输入框  注意id和for那里  -->
+        <label for="2">
+            <p style="color: olivedrab;">
+                小小怪喜欢做什么动作：
+                <input type="text">
+            </p>
+            <p style="color: olivedrab;">
+                小小怪喜欢吃什么：
+                <input type="text" id="2">
+            </p>
+        </label>
+    </div>
+    <!-- 文本域标签 -->
+    <div>
+        <!-- 就是用来设置文本框里可以写几行几列的
+            cols 是用来设置每行中的字符数
+            rows 是用来设置显示的列数
+         -->
+         <p style="color: red;">
+            小小怪的个人简介：
+            <textarea name="个人简介" id="" cols="45" rows="1"></textarea>
+        </p>
+    </div>
+    <!-- 下拉菜单 -->
+    <div>
+        <P style="color: tomato;">
+            小小怪住在哪里：
+            <select name="住址" id="">
+                <option value="南宁">南宁</option>
+                <option value="南宁">南宁</option>
+                <option value="南宁">南宁</option>
+            </select>
+        </P>
+    </div>
+    </form>
+</div>
+</body>
+
+</html>

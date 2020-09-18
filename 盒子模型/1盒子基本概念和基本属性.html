@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: rgb(186, 236, 231);
+        }
+        h3 p #xin
+        {
+            color: red;
+        }
+        h3 p #fa
+        {
+            color: red;
+        }
+        h3 p #nei
+        {
+            color: red;
+        }
+        h3#bian
+        {
+            color: red;
+        }
+
+
+        #box
+        {
+            background-color: red;
+            width: 230px;
+            height: 230px;
+
+            /* 加内边距  遵循 上、右、下、左 ，来使用*/
+            padding: 10px 10px 10px 30px ;
+
+            /* 设置边框  solid 是实现的意思，必须要加，也可以换成虚线（dashed）或双实线（double） */
+            /* 也可以设置边框圆角 （ border-radius） */
+            border: 3px solid darkblue;
+
+            /* 若只想加单个边框可这样使用（border-top 上边框） */
+            /* border-top: 3px solid rgb(47, 0, 255); */
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h3>
+            <p>盒子是由四个属性来组成的,分别是： </p>
+            <p>
+                <span id="xin">1.内容：（content）、2.填充：（padding）、3.边框：（border）、4.边界:(margin) </span>
+                ，详细如下图
+            </p>
+        </h3>
+        <img src="../盒子模型/img/hezi.jpg" alt="">
+        <h3>
+            <p>标准盒子模型及用法</p>
+            <p> 根据<span id="fa">上: top、右：right、下：bottom、左：left</span>来执行操作</p>
+        </h3>
+        <img src="../盒子模型/img/标准盒子模型.jpg" alt="">
+        <h3>
+            <p>内边距用法</p>
+            <p> 依据 <span id="nei">上-右-下-左</span>顺序来操作，用法如下 （4种用法）</p>
+        </h3>
+    
+        <img src="../盒子模型/img/内边距.jpg" alt="">
+        <h3 id="bian">边框</h3>
+        <img src="../盒子模型/img/边框.jpg" alt="">
+    </div>
+    <div id="box">
+        大憨憨
+    </div>
+</body>
+</html>

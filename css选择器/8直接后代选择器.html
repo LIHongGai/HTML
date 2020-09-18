@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* 直接后代选择器  它可以根据标签的关系，为处在元素内部的子后代元素设置样式  用法格式如下*/
+         #main > p{  /*选择main里面的p标签  直接后代选择器只能选择子标签 */
+             color: red;
+         }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p>div中的P标签</p>
+        <p>div中的P标签2</p>
+        <span>
+            <p>span中的P标签</p>
+        </span>
+    </div>
+    <p>外面的P标签</p>
+</body>
+</html>

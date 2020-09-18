@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 兄弟选择器  它可以根据兄弟关系查找元素  用法格式如下*/
+        /* 先给div设置文字颜色和背景颜色 */
+        div{
+            background-color: rgb(130, 221, 77);
+            color: rgb(23, 73, 189);
+        }
+        /* 方法1  查找后边一个兄弟的元素 */
+        div+p{
+            color: royalblue;
+        }
+        /* 方法2  查找后边所有兄弟的元素 */
+        div ~ p{
+            background-color: rgb(235, 228, 131);
+        }
+    </style>
+</head>
+<body>
+    <div>我是div1</div>
+    <p>我是段落1</p>
+    <p>我是段落2</p>
+    <p>我是段落3</p>
+</body>
+</html>
